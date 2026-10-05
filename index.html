@@ -16,10 +16,7 @@
 <body><div id="app"><main class="wrap">
 <header class="top"><div class="brand"><div class="logo">🐒</div><div><div class="title">Banana Quest</div><div class="subtitle">A tiny code-learning game inspired by CodeMonkey</div></div></div><div class="stats"><div class="pill">🍌 <span id="score">0</span> bananas</div><div class="pill">⭐ Level <span id="levelNum">1</span></div></div></header>
 <section class="grid"><div class="card game"><div class="level"><div><h2 id="levelTitle">Level 1 · Straight Ahead</h2><div class="hint" id="hint">Write commands to reach the banana.</div></div><div class="hint" id="moves">0 moves</div></div><div class="board" id="board"></div><div class="controls"><button class="btn" id="run">▶ Run Code</button><button class="btn secondary" id="reset">↻ Reset</button><button class="btn secondary" id="next">Next Level →</button></div></div>
-<aside class="card side"><h3>Your code</h3><aside class="card side"><h3>Your code</h3>
-<button class="btn secondary" id="editCode">✏️ Edit Code</button>
-<textarea id="editor" spellcheck="false" aria-label="Student code" readonly></textarea>
-<div class="hint" style="margin-top:7px">Click Edit Code to change the program.</div>
+<aside class="card side"><h3>Your code</h3><button class="btn secondary" id="editCode">✏️ Edit Code</button><textarea id="editor" spellcheck="false" aria-label="Student code" readonly></textarea><div class="hint" style="margin-top:7px">Click Edit Code to change the program.</div>
 <script>
 const levels=[
  {title:'Straight Ahead',hint:'Use move_forward() to collect the banana.',start:[0,0],banana:[0,4],walls:[],code:['move_forward()','move_forward()','move_forward()','move_forward()']},
